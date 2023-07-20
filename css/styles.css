@@ -1,125 +1,272 @@
-
-
-.logo{
-    text-decoration: none;
-    color: #2196F3;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --accent-color: #2196f3;
+    --basic-color: #ffffff;
+    --text-color: #000000;
+    --title-color: #212121;
+    --bg-color-dark: #2f303a;
+    --bc-color-light: #f5f4fa;
 }
 
-body{
-    margin-left: 10px;
-    color: #212121;
-    font-family: Roboto, sans-serif; 
+.list {
+    list-style: none;
 }
 
-header{
-    flex-direction: row;
-    background-color: #FFFFFF;
-    color: black
-}
-
-a[href^="por"]{
-    color: #2196F3;
-}
-
-nav > ul > li{
-    color: #212121;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-}
-
-.btn-filter:hover{
-    color: rgb(255, 255, 255);
-    background-color: #2196F3;
-    cursor: pointer;
-
-}
-
-.link:link{
-    color: black;
-    font-style: normal;
+.link {
     text-decoration: none;
 }
 
-.link:visited, .button:visited {
-    color: #2196F3;
-    text-decoration: none;
+body {
+    font-family: var(--main-font);
+    font-size: 1 4px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    background-color: var(--basic-color);
 }
 
-.link:active, .button:active {
-    color: white;
-    background-color: #2196F3;
-    text-decoration: none;
+.header{
+    padding: 12px;
 }
 
-ul {
-    list-style-type: none;
+.container {
+    width: 1200px;
+    margin: auto;
 }
 
-.main-box{
+.container-header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.box-products{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);	float: left;
-    width: 370px;
-    height: 404px;
-    flex-shrink: 0;
-	padding: 0.25em;
-	margin: 0 1em 1em
+.navigation{
+    display: flex;
+    align-items: center;
 }
 
-.btn-filter{
-    float:left;
-    margin: 0 0.5% auto;
-    border-color: transparent;
-    border-radius: 2.5px 2.5px;
-    flex: 1 1 auto;
-    justify-content: flex-start;
-    margin: 5px;
+.list{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    align-items: flex-start;
 }
 
-.btn-filter:active{
-    color: #000;
+.container-benefits{
+    width: 279px;
+}
+
+.logo-header {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--accent-color);
+}
+.current{
+    color: var(--accent-color);
+}
+
+.contact-links{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.list .contact-links:hover,
+.list .contact-links:focus {
+    color: var(--title-color);
+    color: var(--accent-color);
+}
+
+.hero {
+    height: 600px;
+    background-color: var(--bg-color-dark);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero-ttl {
+    background-color: var(--bg-color-dark);
+    color: var(--basic-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin:auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 696px;
+}
+
+.buttons{
+    background-color: var(--accent-color);
+    color: var(--basic-color);
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    padding: 10px 32px;
     border-radius: 4px;
-    border: 1px solid #000;
-    background: #F5F4FA;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-color: transparent;
 }
 
-#footer{
-    color: #FFFFFF;
-    background: #2F303A;
-    width: fixed auto;
-    height: 252px;
-    flex-shrink: 0;
+.hero .buttons:hover,
+.hero .buttons:active {
+    background-color: var(--accent-color);
+    color: var(--basic-color);
 }
 
-#address{
+.benefit{
+    color: var(--title-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefit-desc{
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.activity {
+    padding-top: 0;
+
+}
+
+.subtitle {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.team {
+    background-color: var(--bc-color-light);
+ }
+
+.names {
+    font-weight: 500;
+    font-size: 16px;
     font-style: normal;
-    text-decoration: none;
-    
+    line-height: 1.18;
+    letter-spacing: 0.48;
+    text-align: center;
+    color: var(--text-color);
 }
 
-/* This line keeps the style for the footer */
-li > a {
+.position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
     font-style: normal;
-    text-decoration: none;
-    color: #FFFFFF 60%;
+    text-align: center;
+    letter-spacing: 0.48;
+    color: var(--text-color);
 }
 
-a[href^="mailto"], a[href^="tel"]{
-    text-decoration: none;
-    color: rgb(255, 255, 255, 0.6);
+.footer {
+    background-color: var(--bg-color-dark);
+    padding: 60px;
 }
-                
+
+.logo-footer{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.list-footer{
+    list-style: none;
+    padding: 0;
+}
+
+.address{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.71;
+    color: var(--basic-color);
+}
+
+.contact-footer {
+    font-weight: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+.portfolio-current {
+    color: var(--accent-color);
+}
+
+.filter.buttoms {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.filter.buttoms:hover,
+.filter.buttoms:focus,
+.filter.buttoms:active {
+    background-color: var(--accent-color);
+    color: var(--basic-color);
+}
+
+.filter-current {
+    background-color: var(--accent-color);
+    color: var(--basic-color);
+}
+
+.portfolio-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.portfolio-type {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--text-color);
+}
