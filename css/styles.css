@@ -7,6 +7,7 @@
     --title-color: #212121;
     --bg-color-dark: #2f303a;
     --bc-color-light: #f5f4fa;
+    --bc-color-border: #ececec;
 }
 
 .list {
@@ -27,6 +28,7 @@ body {
 
 .header{
     padding: 12px;
+    border-bottom: 1px solid var(--bc-color-border);
 }
 
 .container {
@@ -52,8 +54,9 @@ body {
     align-items: flex-start;
 }
 
+
 .container-benefits{
-    width: 279px;
+    width: 270px;
 }
 
 .logo-header {
@@ -87,8 +90,9 @@ body {
     color: var(--text-color);
 }
 
-.list .contact-links:hover,
-.list .contact-links:focus {
+.list, .contact-links:hover,
+.list, .contact-links:focus,
+.list, .contact-links:active {
     color: var(--title-color);
     color: var(--accent-color);
 }
@@ -234,7 +238,13 @@ body {
     color: var(--accent-color);
 }
 
-.filter.buttoms {
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter.buttoms{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -243,16 +253,20 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-color);
     cursor: pointer;
-}
+    border: none;
+    border-radius: 4px;
+    padding: 6px 24px;
 
-.filter.buttoms:hover,
-.filter.buttoms:focus,
-.filter.buttoms:active {
+} 
+
+.filter.buttoms:hover
+.filter.buttoms:focus
+.filter.buttoms:active{
     background-color: var(--accent-color);
     color: var(--basic-color);
 }
 
-.filter-current {
+.filter-current{
     background-color: var(--accent-color);
     color: var(--basic-color);
 }
@@ -269,4 +283,31 @@ body {
     font-size: 16px;
     line-height: 1.87;
     color: var(--text-color);
+}
+
+.portfolio {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card{
+    width: 370px;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.card-info{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--bc-color-border);
+    border-top: none;
+    padding: 20px 24px;
 }
