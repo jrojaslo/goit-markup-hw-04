@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css">    
-    <title>“Estudio”</title>
+    <title>“Estudio ”</title>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -24,8 +24,15 @@
                 </ul>
             </nav>
             <ul class="list">
-                <li class="list-item"><a href="mailto:info@devstudio.com" class="contact-links link">info@devstudio.com</a></li>
-                <li class="list-item"><a href="tel:+380961111111" class="contact-links link">+52 55 5529 6000</a></li>          
+                <li class="list-item"><a href="mailto:info@devstudio.com" class="contact-links link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                        <path d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z" fill="#2196F3"/>
+                      </svg> info@devstudio.com</a></li>
+                <li class="list-item"><a href="tel:+380961111111" class="contact-links link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                        <path d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z" fill="#757575"/>
+                        <path d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z" fill="#757575"/>
+                    </svg> +52 55 5529 6000</a></li>          
             </ul>               
         </div>
     </header>
@@ -34,7 +41,9 @@
     <section class="hero section"> 
         <div class="container container-hero">
             <h1 class="hero-ttl">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+            <!-- <img background src="./images/main-background.jpg" alt="people at business table"> -->
             <button type="button" class="buttons">Solicite nuestro servicio</button>
+            
         </div>
     </section>
     <section class="section">
@@ -42,18 +51,30 @@
     <div class="container">
         <ul class="list">
             <li class="container-benefits">
+                <svg class="icon-benefit">
+                    <use href="./images/icons.svg#antena"></use>
+                </svg>
                 <h3 class="benefit">ATENCIÓN A LOS DETALLES</h3>
                 <p class="benefit-desc">Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
             </li>
             <li class="container-benefits"> 
+                <svg class="icon-benefit">
+                    <use href="./images/icons.svg#clock"></use>
+                </svg>
                 <h3 class="benefit">PUNTUALIDAD</h3>
                 <p class="benefit-desc">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
             </li>
-            <li class="container-benefits">  
+            <li class="container-benefits">
+                <svg class="icon-benefit">
+                    <use href="./images/icons.svg#diagramm"></use>
+                </svg>  
                 <h3 class="benefit">PLANIFICACIÓN</h3>
                 <p class="benefit-desc">Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
             </li>
-            <li class="container-benefits">  
+            <li class="container-benefits">
+                <svg class="icon-benefit">
+                    <use href="./images/icons.svg#astronaut"></use>
+                </svg>  
                 <h3 class="benefit">TECNOLOGÍA MODERNA</h3>
                 <p class="benefit-desc">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
             </li>
@@ -92,7 +113,7 @@
                     <p class="position">Marketing</p>
                 </li>
                 <li>
-                    <img src="images/Pablo-Mijangos.jpg" width="270" height=294 alt="Pablo Mijangos">
+                    <img src="/images/Pablo-Mijangos.jpg" width="270" height=294 alt="Pablo Mijangos">
                     <h3 class="names">Pablo Mijangos</h3>
                     <p class="position">Diseñador IU</p>
                 </li>
@@ -110,10 +131,10 @@
                         <a class="address link" href="maps" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de México, CDMX, México</a>
                     </li>
                     <li>
-                        <a class="contact-footer" href="mailto:info@devstudio.com">info@example.com</a>
+                        <a class="contact-footer link" href="mailto:info@devstudio.com">info@example.com</a>
                     </li>
                     <li>
-                        <a class="contact-footer" href="tel:+380961111111">+52 55 5529 6000 </a>
+                        <a class="contact-footer link" href="tel:+380961111111">+52 55 5529 6000 </a>
                     </li>
                 </ul>
             </address>
