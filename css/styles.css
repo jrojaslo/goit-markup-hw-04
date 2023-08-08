@@ -16,6 +16,7 @@
 
 .link {
     text-decoration: none;
+    font-style: normal;
 }
 
 body {
@@ -53,7 +54,6 @@ body {
     gap: 35px;
     align-items: flex-start;
 }
-
 
 .container-benefits{
     width: 270px;
@@ -103,7 +103,37 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    background-image: url(../images/main-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.icon-envelop {
+    width: 16px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.icon-envelop:hover
+.icon-smartphone:hover {
+    color: var(--accent-color);
+}
+
+.icon-benefit {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    display: flex;
+    justify-content: center;
+    padding: 25px 100px;
+  }
 
 .section{
     padding-top: 94px;
@@ -111,7 +141,7 @@ body {
 }
 
 .hero-ttl {
-    background-color: var(--bg-color-dark);
+    background-color: none;
     color: var(--basic-color);
     font-weight: 900;
     font-size: 44px;
